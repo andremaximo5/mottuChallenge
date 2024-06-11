@@ -1,0 +1,19 @@
+<section class="container">
+  <header>Pesquisar</header>
+  <div class="busca">
+    <input
+      type="search"
+      [formControl]="campoBusca">
+  </div>
+  <div class="resultados mesagem-erro" ></div>
+<div class="container-card" *ngIf="listCardFilter$ | async as listCard , else telaInicial">
+  <div *ngFor="let list of listCard" >
+    <app-home-rick-morty [list]="list" ></app-home-rick-morty>
+  </div>
+</div>
+<ng-template #telaInicial>
+  <div class="imagens">
+    <h1 class="titulo">Nada foi encontrado<br> tente realizar <br> uma nova busca </h1>
+  </div>
+</ng-template>
+

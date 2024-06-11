@@ -1,0 +1,21 @@
+/* .card {
+  display: flex;
+  width: 384px;
+  height: 310px;
+  filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.2));
+  margin: 24px;
+  border-radius: 8px 0px 0px 8px;
+} */
+
+.example-card {
+  max-width: 200px;
+}
+
+
+
+
+
+
+
+
+
